@@ -1,0 +1,52 @@
+
+<div class="container">
+ 
+ <div class="page-header">
+    <h1>Nuevo auto</h1> 
+  </div>
+
+  <form>
+
+  <div class="row">
+      
+    <div class="col-xs-6 col-sm-6 col-md-6">
+       <mat-form-field class="example-full-width">
+      <label><strong>Año:</strong></label>
+      <input matInput  type="number" name="anio" [(ngModel)]="car.anio" md-maxlength="10" required>
+    </mat-form-field>
+  
+    </div>
+
+    <div class="col-xs-6 col-sm-6 col-md-6">
+        <mat-form-field class="example-full-width">
+      <label><strong>Color:</strong></label>
+      <input matInput  name="color" [(ngModel)]="car.color" required>
+    </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6">
+        <mat-form-field class="example-full-width">
+      <label><strong>Marca:</strong></label>
+      <input matInput  name="marca" [(ngModel)]="car.marca"required>
+    </mat-form-field>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6">
+        <mat-form-field class="example-full-width">
+      <label><strong>Modelo:</strong></label>
+      <input matInput  name="modelo" [(ngModel)]="car.modelo"required>
+    </mat-form-field>
+    </div>
+  </div>
+
+  <div class="divbtn">
+    <br>
+    <button type="submit" class="btn-save" (click)="save()" >Guardar</button>
+  </div>
+
+</form>
+ 
+</div>
+
+

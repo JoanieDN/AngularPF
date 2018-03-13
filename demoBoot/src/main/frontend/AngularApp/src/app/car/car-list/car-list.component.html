@@ -1,0 +1,33 @@
+<!-- <cr-header></cr-header>-->
+<div class="container">
+ 
+   <div class="page-header">
+        <h1>Catálogo</h1> 
+      </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Año</th>
+        <th>Color</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of cars">
+        <td>{{c.id}}</td>
+        <td>{{c.anio}}</td>
+        <td>{{c.color}}</td>
+        <td>{{c.marca}}</td>
+        <td>{{c.modelo}}</td>
+        
+      </tr>
+      <tr>
+        
+    </tbody>
+  </table> 
+  
+
+</div>
